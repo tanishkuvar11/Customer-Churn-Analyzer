@@ -42,6 +42,7 @@ Censored data — customers still active at observation time — is handled corr
 
 ## Project Structure
 
+```
 customer-churn-predictor/
 ├── notebook/
 │   └── analysis.ipynb       # EDA, KM curves, log-rank tests, Cox model
@@ -54,7 +55,7 @@ customer-churn-predictor/
 ├── streamlit/
 │   └── dashboard.py         # Streamlit frontend
 └── requirements.txt
-
+```
 ## How to Run
 
 **1. Install dependencies**
