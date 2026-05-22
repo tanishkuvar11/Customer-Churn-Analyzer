@@ -1,0 +1,32 @@
+Insights:
+
+In dataset - 85.6% not churned, 14.4% churned
+
+CustServCalls and DayMins highest factors of churning
+
+Avg Churn Rate spikes up when CustServCalls go from 3 to 4
+
+42% churn rate for non- ContractRenewals vs 11% for Renewals
+
+Log-rank tests confirm statistically significant survival differences for ContractRenewal (p ≈ 0) and CustServCalls threshold (p ≈ 0), validating both as strong predictors for the Cox PH model.
+
+5 features influence confirmed. Cox model will use:
+ContractRenewal
+CustServCalls
+DayMins
+OverageFee
+MonthlyCharge
+
+Cox Model Results:
+ContractRenewal = 0.30 - renewing contract reduces churn risk by 70%. Strongest protective factor.
+CustServCalls = 1.36 - every additional service call increases churn risk by 36%.
+DayMins = 1.01 - every additional minute increases churn risk by 1%. Small but significant.
+OverageFee = 1.13 - every unit increase in overage fee increases churn risk by 13%.
+MonthlyCharge = 0.98 - slight protective effect, interesting.
+
+Thus, for high risk customer:
+No Contract Renewal
+More Customer Service Calls
+More Daily Mins
+More Overage Fee
+Less Monthly Charge
